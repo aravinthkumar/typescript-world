@@ -67,22 +67,44 @@ calc2.sub();
 calc2.multiply();
 calc2.div();
 
-const person = {
-    name: "Aravinth",
-    age: 30,
-    healthMeasurement : {
+enum Role {
+    ADMIN,DEVELOPER,TESTER
+}
+
+const person: {
+    name: string,
+    age: number,
+    healthMeasurement: {
+        bloodPressure: string,
+        temperature: number,
+        temperatureDate: number}
+    hobbies: string[],
+    sizes: [string,number],
+    role: Role
+}
+ = {
+    name: "Aravinth", //string
+    age: 30, // number
+    healthMeasurement : { //nested object
         bloodPressure: "129/80",
         temperature: 98,
         temperatureDate: 12122022
     }     ,
-    hobbies: [54,'Basketball','Footbal',10,true,{
-       name: "hello",
-       height: 30
-    }]
+    hobbies: ['Basketball','Football'], //array "string"
+    sizes: ["Hello",2.5], // tuple
+    role: Role.DEVELOPER
 }
 
 console.log(person);
 
+console.log(person.role);
+
+for(const hobby of person.hobbies){
+    console.log(hobby.toUpperCase()); //method of string
+}
+
 let favoriteHobby: (string|number|boolean)[];
 favoriteHobby = ["Basketball","Football",121,true,];
+
+
 

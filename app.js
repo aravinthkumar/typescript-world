@@ -53,6 +53,12 @@ calc2.add();
 calc2.sub();
 calc2.multiply();
 calc2.div();
+var Role;
+(function (Role) {
+    Role[Role["ADMIN"] = 0] = "ADMIN";
+    Role[Role["DEVELOPER"] = 1] = "DEVELOPER";
+    Role[Role["TESTER"] = 2] = "TESTER";
+})(Role || (Role = {}));
 var person = {
     name: "Aravinth",
     age: 30,
@@ -60,6 +66,16 @@ var person = {
         bloodPressure: "129/80",
         temperature: 98,
         temperatureDate: 12122022
-    }
+    },
+    hobbies: ['Basketball', 'Football'],
+    sizes: ["Hello", 2.5],
+    role: Role.DEVELOPER
 };
 console.log(person);
+console.log(person.role);
+for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
+    var hobby = _a[_i];
+    console.log(hobby.toUpperCase()); //method of string
+}
+var favoriteHobby;
+favoriteHobby = ["Basketball", "Football", 121, true,];
