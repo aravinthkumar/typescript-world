@@ -1,24 +1,9 @@
-console.log("This compile the TS file for now");
-
-let n1 = 5;
-let n3 = "6";
-let n4 = true;
-
-const n2 = 2;
-const result = add(n1,n2);
-console.log(result);
-
-
-function add(number1: number, number2: number){
-    return number1 + number2
-};
-
 class Calculator
 {
-    parameter1: number;
-    parameter2: number;
-    displayResult: boolean;
-    constructor(params1:number,params2:number,disRes){
+    private parameter1: number;
+    private parameter2: number;
+    private displayResult: boolean;
+    constructor(params1:number,params2:number,disRes:boolean){
         this.parameter1 = params1;
         this.parameter2 = params2;
         this.displayResult = disRes;
@@ -66,42 +51,3 @@ calc2.add();
 calc2.sub();
 calc2.multiply();
 calc2.div();
-
-enum Role {
-    ADMIN=1,DEVELOPER=2,TESTER=3
-}
-
-const person: {
-    name: string,
-    age: number,
-    healthMeasurement: {
-        bloodPressure: string,
-        temperature: number,
-        temperatureDate: number}
-    hobbies: string[],
-    sizes: [string,number],
-    role: Role
-}
- = {
-    name: "Aravinth", //string
-    age: 30, // number
-    healthMeasurement : { //nested object
-        bloodPressure: "129/80",
-        temperature: 98,
-        temperatureDate: 12122022
-    }     ,
-    hobbies: ['Basketball','Football'], //array "string"
-    sizes: ["Hello",2.5], // tuple
-    role: Role.ADMIN
-}
-
-console.log(person);
-
-console.log(person.role);
-
-for(const hobby of person.hobbies){
-    console.log(hobby.toUpperCase()); //method of string
-}
-
-let favoriteHobby: any[];//any type
-favoriteHobby = ["Basketball","Football",121,true,];
