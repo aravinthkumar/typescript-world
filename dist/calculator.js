@@ -1,6 +1,7 @@
 "use strict";
 class Calculator {
-    constructor(params1, params2, disRes) {
+    constructor(params1, params2, disRes, id) {
+        this.id = id;
         this.parameter1 = params1;
         this.parameter2 = params2;
         this.displayResult = disRes;
@@ -32,13 +33,12 @@ class Calculator {
 }
 const p1 = 2;
 const p2 = 2;
-const calc = new Calculator(2, 2, false);
-calc.parameter1 = 4;
+const calc = new Calculator(2, 2, false, "1");
 console.log("consumer print: addition = " + calc.add());
 console.log("consumer print: addition = " + calc.sub());
 console.log("consumer print: addition = " + calc.multiply());
 console.log("consumer print: addition = " + calc.div());
-const calc2 = new Calculator(4, 2, true);
+const calc2 = new Calculator(4, 2, true, "2");
 calc2.add();
 calc2.sub();
 calc2.multiply();
