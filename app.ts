@@ -67,16 +67,7 @@ calc2.sub();
 calc2.multiply();
 calc2.div();
 
-const person: {
-    name: string,
-    age: number,
-    healthMeasurement : {
-        bloodPressure: string,
-        temperature: number,
-        temperatureDate: number
-    }
-}
-= {
+const person = {
     name: "Aravinth",
     age: 30,
     healthMeasurement : {
