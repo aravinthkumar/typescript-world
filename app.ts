@@ -105,6 +105,3 @@ for(const hobby of person.hobbies){
 
 let favoriteHobby: any[];//any type
 favoriteHobby = ["Basketball","Football",121,true,];
-
-
-
