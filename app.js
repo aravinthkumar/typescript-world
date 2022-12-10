@@ -55,6 +55,11 @@ calc2.multiply();
 calc2.div();
 var person = {
     name: "Aravinth",
-    age: 30
+    age: 30,
+    healthMeasurement: {
+        bloodPressure: "129/80",
+        temperature: 98,
+        temperatureDate: 12122022
+    }
 };
-console.log(person.name);
+console.log(person.healthMeasurement.temperature);

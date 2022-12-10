@@ -69,9 +69,20 @@ calc2.div();
 
 const person: {
     name: string,
-    age: number
-} = {
-    name: "Aravinth",
-    age: 30     
+    age: number,
+    healthMeasurement : {
+        bloodPressure: string,
+        temperature: number,
+        temperatureDate: number
+    }
 }
-console.log(person.name);
+= {
+    name: "Aravinth",
+    age: 30,
+    healthMeasurement : {
+        bloodPressure: "129/80",
+        temperature: 98,
+        temperatureDate: 12122022
+    }     
+}
+console.log(person.healthMeasurement.temperature);
