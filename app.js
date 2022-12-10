@@ -55,9 +55,9 @@ calc2.multiply();
 calc2.div();
 var Role;
 (function (Role) {
-    Role[Role["ADMIN"] = 0] = "ADMIN";
-    Role[Role["DEVELOPER"] = 1] = "DEVELOPER";
-    Role[Role["TESTER"] = 2] = "TESTER";
+    Role[Role["ADMIN"] = 1] = "ADMIN";
+    Role[Role["DEVELOPER"] = 2] = "DEVELOPER";
+    Role[Role["TESTER"] = 3] = "TESTER";
 })(Role || (Role = {}));
 var person = {
     name: "Aravinth",
@@ -69,7 +69,7 @@ var person = {
     },
     hobbies: ['Basketball', 'Football'],
     sizes: ["Hello", 2.5],
-    role: Role.DEVELOPER
+    role: Role.ADMIN
 };
 console.log(person);
 console.log(person.role);

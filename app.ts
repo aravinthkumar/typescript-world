@@ -68,7 +68,7 @@ calc2.multiply();
 calc2.div();
 
 enum Role {
-    ADMIN,DEVELOPER,TESTER
+    ADMIN=1,DEVELOPER=2,TESTER=3
 }
 
 const person: {
@@ -92,7 +92,7 @@ const person: {
     }     ,
     hobbies: ['Basketball','Football'], //array "string"
     sizes: ["Hello",2.5], // tuple
-    role: Role.DEVELOPER
+    role: Role.ADMIN
 }
 
 console.log(person);
@@ -103,7 +103,7 @@ for(const hobby of person.hobbies){
     console.log(hobby.toUpperCase()); //method of string
 }
 
-let favoriteHobby: (string|number|boolean)[];
+let favoriteHobby: any[];//any type
 favoriteHobby = ["Basketball","Football",121,true,];
 
 
