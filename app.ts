@@ -74,6 +74,15 @@ const person = {
         bloodPressure: "129/80",
         temperature: 98,
         temperatureDate: 12122022
-    }     
+    }     ,
+    hobbies: [54,'Basketball','Footbal',10,true,{
+       name: "hello",
+       height: 30
+    }]
 }
-console.log(person.healthMeasurement.temperature);
+
+console.log(person);
+
+let favoriteHobby: (string|number|boolean)[];
+favoriteHobby = ["Basketball","Football",121,true,];
+

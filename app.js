@@ -62,4 +62,4 @@ var person = {
         temperatureDate: 12122022
     }
 };
-console.log(person.healthMeasurement.temperature);
+console.log(person);
